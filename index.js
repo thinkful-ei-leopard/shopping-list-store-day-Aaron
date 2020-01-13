@@ -97,6 +97,13 @@ const getItemIdFromElement = function (item) {
     .data('item-id');
 };
 
+//change the item
+const changeItem = function (id, name) {
+  const index = store.items.findIndex(item => item.id === id);
+  store.items[index].name = name;
+};
+
+const changeItem
 /**
  * Responsible for deleting a list item.
  * @param {string} id 
